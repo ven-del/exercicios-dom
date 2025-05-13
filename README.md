@@ -35,6 +35,6 @@ O projeto consiste em criar um calendário interativo onde:
 1. Clone este repositório para sua máquina local:
 
    ```bash
-   git clone https://github.com/SEU_USUARIO/calendario-seletivo.git
+   git clone https://github.com/ven-del/exercicios-dom.git
 ````
 
