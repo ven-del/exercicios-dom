@@ -1,40 +1,29 @@
 # Calendário Seletivo
 
-Este repositório contém um projeto de um calendário interativo onde o usuário pode selecionar um **mês**, **ano** e **dia**, com a exibição de uma mensagem personalizada dependendo do mês selecionado. O calendário é construído dinamicamente com **JavaScript** e tem um layout estilizado com **Bootstrap** para maior responsividade e usabilidade.
+Este projeto faz parte da atividade do **projeto Geração Tech**. Ele consiste em um calendário interativo onde o usuário pode selecionar um **mês**, **ano** e **dia**, com a exibição de uma mensagem personalizada dependendo do mês selecionado. O calendário é gerado dinamicamente com **JavaScript** e tem um layout estilizado com **Bootstrap** para maior responsividade e usabilidade.
 
-## Enunciado da Questão
+## Requisitos
 
-O projeto consiste em criar um calendário interativo onde:
+- **Seleção de Ano**: Geração dinâmica de anos de **1925 até o ano atual**.
+- **Seleção de Mês**: Permite escolher qualquer mês do ano.
+- **Seleção de Dia**: Atualiza os dias automaticamente, considerando anos bissextos.
+- **Mensagens Personalizadas**: Exibe uma mensagem para cada mês:
+  - Janeiro: `bugado(a)`
+  - Fevereiro: `do CTRL C, CTRL V`
+  - Março: `das gambiarras`
+  - Abril: `que culpa o cache`
+  - Maio: `que esquece o que faz`
+  - Junho: `do git vazio`
+  - Julho: `das try/ catch vazia`
+  - Agosto: `famosinho do LinkedIn`
+  - Setembro: `caçador de bugs`
+  - Outubro: `do Windows Pirata`
+  - Novembro: `do update sem where`
+  - Dezembro: `do commit bugado`
 
-- O usuário pode escolher o **mês** e **ano**.
-- O sistema deve gerar automaticamente os dias do mês selecionado.
-- Dependendo do mês selecionado, uma mensagem personalizada deve ser exibida na tela.
-- A interface deve ser estilizada de forma responsiva utilizando o **Bootstrap**.
+## Como Rodar
 
-### Requisitos
+Clone o repositório:
 
-1. **Seleção de Ano**: O campo de seleção de ano deve gerar dinamicamente os anos de **1925 até o ano atual**.
-2. **Seleção de Mês**: O campo de seleção de mês deve permitir ao usuário escolher entre todos os meses do ano.
-3. **Seleção de Dia**: Com base no mês e ano selecionados, o número de dias deve ser atualizado automaticamente, levando em consideração anos bissextos no caso de fevereiro.
-4. **Mensagens Personalizadas**: Ao selecionar um mês, uma mensagem relacionada ao mês deve ser exibida na tela. As mensagens para cada mês são as seguintes:
-    - Janeiro: `bugado(a)`
-    - Fevereiro: `do CTRL C, CTRL V`
-    - Março: `das gambiarras`
-    - Abril: `que culpa o cache`
-    - Maio: `que esquece o que faz`
-    - Junho: `do git vazio`
-    - Julho: `das try/ catch vazia`
-    - Agosto: `famosinho do LinkedIn`
-    - Setembro: `caçador de bugs`
-    - Outubro: `do Windows Pirata`
-    - Novembro: `do update sem where`
-    - Dezembro: `do commit bugado`
-
-## Como Rodar o Projeto
-
-1. Clone este repositório para sua máquina local:
-
-   ```bash
-   git clone https://github.com/ven-del/exercicios-dom.git
-````
-
+```bash
+git clone https://github.com/ven-del/exercicios-dom.git
