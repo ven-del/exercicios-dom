@@ -14,32 +14,17 @@
 
     <div class="row justify-content-center mb-4">
       <div class="col-md-3 mb-2">
-        <select id="dia" class="form-select">
-          <!-- Dias serão gerados dinamicamente -->
+        <select id="dia" class="form-select" >
         </select>
       </div>
 
       <div class="col-md-3 mb-2">
-        <select id="mes" class="form-select">
-          <option value="">Selecione o mês</option>
-          <option value="1">Janeiro</option>
-          <option value="2">Fevereiro</option>
-          <option value="3">Março</option>
-          <option value="4">Abril</option>
-          <option value="5">Maio</option>
-          <option value="6">Junho</option>
-          <option value="7">Julho</option>
-          <option value="8">Agosto</option>
-          <option value="9">Setembro</option>
-          <option value="10">Outubro</option>
-          <option value="11">Novembro</option>
-          <option value="12">Dezembro</option>
+        <select id="mes" class="form-select" onchange="atualizarDias()">
         </select>
       </div>
 
       <div class="col-md-3 mb-2">
-        <select id="ano" class="form-select">
-          <!-- Anos serão gerados dinamicamente -->
+        <select id="ano" class="form-select" onchange="atualizarDias()">
         </select>
       </div>
     </div>
@@ -56,8 +41,8 @@
     </div>
 
     <div class="text-center">
-      <h3 id="mensagem-mes" class="text-primary mt-4"></h3>
-      <h2 id="dia-da-semana" class="text-secondary mt-2"></h2>
+      <h2 id="mensagem-resultado" class="text-primary mt-4"></h2>
+      <h2 id="texto-resultado" class="text-secondary mt-2"></h2>
     </div>
   </div>
 
