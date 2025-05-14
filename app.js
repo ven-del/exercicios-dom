@@ -128,9 +128,15 @@ const descobrirNomeDev = () => {
     let primeiraParte = '';
     let segundaParte = '';
     const ultimoDigitoDia = diaSelecionado % 10;
-    if (ultimoDigitoDia === 5 && mesSelecionado === 1){
+    if (diaSelecionado === 5 && mesSelecionado === 1){
         primeiraParte = 'Game Dev';
         segundaParte = 'Fã de Linkin Park';
+    } else if (diaSelecionado === 13 && mesSelecionado === 10) {
+        primeiraParte = 'Rockeira';
+        segundaParte = 'Trevouser';
+    }else if (diaSelecionado === 3 && mesSelecionado === 9){
+        primeiraParte = 'PHPeiro';
+        segundaParte = 'Do crack';
     } else {
         if (ultimoDigitoDia === 1 || ultimoDigitoDia === 2) {
             primeiraParte = 'Desenvolvedor(a)';
@@ -141,9 +147,9 @@ const descobrirNomeDev = () => {
         } else if (ultimoDigitoDia === 9 || ultimoDigitoDia === 0) {
             primeiraParte = 'Senior';
         }
+        segundaParte = nomeDevMeses[mesSelecionado];
     }
 
-    segundaParte = nomeDevMeses[mesSelecionado];
 
     mensagemResultado.innerHTML = "";
     mensagemResultado.innerHTML = "Seu nome de Dev é:";
