@@ -118,6 +118,7 @@ const mostrarDiaDaSemana = () => {
 const descobrirNomeDev = () => {
     const diaSelecionado = Number(document.getElementById('dia').value);
     const mesSelecionado = Number(document.getElementById('mes').value);
+    const anoSelecionado = Number(document.getElementById('ano').value);
     const mensagemResultado = document.getElementById("mensagem-resultado");
     const textoResultado = document.getElementById("texto-resultado");
 
@@ -130,13 +131,13 @@ const descobrirNomeDev = () => {
     let primeiraParte = '';
     let segundaParte = '';
     const ultimoDigitoDia = diaSelecionado % 10;
-    if (diaSelecionado === 5 && mesSelecionado === 1){
+    if (diaSelecionado === 5 && mesSelecionado === 1 && anoSelecionado === 1994){
         primeiraParte = 'Game Dev';
         segundaParte = 'Fã de Linkin Park';
-    } else if (diaSelecionado === 13 && mesSelecionado === 10) {
-        primeiraParte = 'Cristina Scabbia';
-        segundaParte = 'Brasileira';
-    }else if (diaSelecionado === 3 && mesSelecionado === 9){
+    } else if (diaSelecionado === 13 && mesSelecionado === 10 && anoSelecionado === 1991) {
+        primeiraParte = 'We fear';
+        segundaParte = 'Nothing';
+    }else if (diaSelecionado === 3 && mesSelecionado === 9 && anoSelecionado === 2005){
         primeiraParte = 'Alguém pode me dar uma garrafa de café';
         segundaParte = 'e um pacote de crack? ;-;';
     } else {
