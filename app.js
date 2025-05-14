@@ -71,7 +71,11 @@ const gerarValoresDosDias = () => {
     const anoAtual = Number(document.getElementById('ano').value);
     let quantidadeDias = 0;
 
-    if (objetoMeses[mesAtual]) {
+    const diaSelecionado = dia.value;
+
+    if (isNaN(mesAtual) || mesAtual === 0) {
+        quantidadeDias = objetoMeses[1].dias;
+    } else {
         quantidadeDias = objetoMeses[mesAtual].dias;
         if (mesAtual === 2 && checarAnoBissexto(anoAtual)) {
             quantidadeDias++;
@@ -86,6 +90,10 @@ const gerarValoresDosDias = () => {
         option.value = i;
         option.innerHTML = i;
         dia.appendChild(option);
+    }
+
+    if (diaSelecionado && diaSelecionado !== "dia" && Number(diaSelecionado) <= quantidadeDias) {
+        dia.value = diaSelecionado;
     }
 }
 
@@ -158,3 +166,12 @@ const descobrirNomeDev = () => {
     mensagemResultado.innerHTML = "Seu nome de Dev é:";
     textoResultado.innerHTML = ` ${primeiraParte} ${segundaParte}`;
 };
+
+const inicializarCalendario = () => {
+    gerarValoresDosAnos();
+    gerarValoresDosMeses();
+    gerarValoresDosDias();
+    atualizarDias();
+}
+
+document.addEventListener('DOMContentLoaded', inicializarCalendario);
