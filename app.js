@@ -107,6 +107,9 @@ const mostrarDiaDaSemana = () => {
     const anoSelecionado = Number(document.getElementById('ano').value);
     const mensagemResultado = document.getElementById('mensagem-resultado');
     const textoResultado = document.getElementById('texto-resultado');
+    const easterEggMsg = document.getElementById("easter-egg-msg");
+
+    easterEggMsg.textContent = "";
 
     if (isNaN(diaSelecionado) || isNaN(mesSelecionado) || isNaN(anoSelecionado) ||
         diaSelecionado < 1 || diaSelecionado > 31 || mesSelecionado < 0 || mesSelecionado > 11) {
@@ -129,6 +132,7 @@ const descobrirNomeDev = () => {
     const anoSelecionado = Number(document.getElementById('ano').value);
     const mensagemResultado = document.getElementById("mensagem-resultado");
     const textoResultado = document.getElementById("texto-resultado");
+    const easterEggMsg = document.getElementById("easter-egg-msg");
 
     if (isNaN(diaSelecionado) || isNaN(mesSelecionado) ||
         diaSelecionado < 1 || diaSelecionado > 31 || mesSelecionado < 1 || mesSelecionado > 12) {
@@ -142,13 +146,23 @@ const descobrirNomeDev = () => {
     if (diaSelecionado === 5 && mesSelecionado === 1 && anoSelecionado === 1994){
         primeiraParte = 'Game Dev';
         segundaParte = 'Fã de Linkin Park';
+        confetti.start();
+        easterEggMsg.textContent = "Você achou um easter egg!";
+        confetti.stop();
     } else if (diaSelecionado === 13 && mesSelecionado === 10 && anoSelecionado === 1991) {
         primeiraParte = 'We fear';
         segundaParte = 'Nothing';
+        confetti.start();
+        easterEggMsg.textContent = "Você achou um easter egg!";
+        confetti.stop();
     }else if (diaSelecionado === 3 && mesSelecionado === 9 && anoSelecionado === 2005){
         primeiraParte = 'Alguém pode me dar uma garrafa de café';
         segundaParte = 'e um pacote de crack? ;-;';
+        confetti.start();
+        easterEggMsg.textContent = "Você achou um easter egg!";
+        confetti.stop();
     } else {
+        easterEggMsg.textContent = '';
         if (ultimoDigitoDia === 1 || ultimoDigitoDia === 2) {
             primeiraParte = 'Desenvolvedor(a)';
         } else if (ultimoDigitoDia === 3 || ultimoDigitoDia === 4 || ultimoDigitoDia === 5) {
