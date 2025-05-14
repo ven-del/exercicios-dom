@@ -4,6 +4,8 @@
 // **meses com 31 dias e 30 dias
 // ***anos bissextos
 
+
+
 const objetoMeses = {
     1: { mes: 'Janeiro', dias: 31 },
     2: { mes: 'Fevereiro', dias: 28 },
@@ -132,11 +134,11 @@ const descobrirNomeDev = () => {
         primeiraParte = 'Game Dev';
         segundaParte = 'Fã de Linkin Park';
     } else if (diaSelecionado === 13 && mesSelecionado === 10) {
-        primeiraParte = 'Rockeira';
-        segundaParte = 'Trevouser';
+        primeiraParte = 'Cristina Scabbia';
+        segundaParte = 'Brasileira';
     }else if (diaSelecionado === 3 && mesSelecionado === 9){
-        primeiraParte = 'PHPeiro';
-        segundaParte = 'Do crack';
+        primeiraParte = 'Alguém pode me dar uma garrafa de café';
+        segundaParte = 'e um pacote de crack? ;-;';
     } else {
         if (ultimoDigitoDia === 1 || ultimoDigitoDia === 2) {
             primeiraParte = 'Desenvolvedor(a)';
