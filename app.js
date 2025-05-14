@@ -41,7 +41,7 @@ const gerarValoresDosAnos = () => {
     const ano = document.getElementById('ano');
     ano.innerHTML = '';
     ano.appendChild(new Option("Ano", "ano"));
-    for (let i = 1925; i <= 2025; i++) {
+    for (let i = 2025; i >= 1925; i--) {
         const option = document.createElement('option');
         option.value = i;
         option.innerHTML = i;
